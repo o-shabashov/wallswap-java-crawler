@@ -71,7 +71,7 @@ public class Crawl {
     List<Wallpaper> wallpapers = new ArrayList<>();
 
     try {
-      doc = Jsoup.connect("https://alpha.wallhaven.cc/search?categories=101&purity=110&sorting=random&order=desc")
+      doc = Jsoup.connect("https://alpha.wallhaven.cc/search?categories=101&purity=100&sorting=random&order=desc")
         .userAgent("Mozilla")
         .get();
     } catch (IOException e) {
