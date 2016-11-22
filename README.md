@@ -11,13 +11,13 @@ See [https://github.com/o-shabashov/wallswap-java](https://github.com/o-shabasho
 3. Upload wallpapers for each user in Dropbox directory.
 
 ## Installation
-1. Create MySQL database `wallswap` and import `wallswap.sql`
-2. Install gradle dependencies:
+* Create MySQL database `wallswap` and import `wallswap.sql`
+* Install gradle dependencies:
 ```bash
 cd wallswap-java-crawler
 gradle build
 ```
-3. Run crawl once a week:
+* Run crawl once a week:
 ```bash
 gradle build ; java -jar build/libs/wallswap-java-crawler-0.1.0.jar
 ```
