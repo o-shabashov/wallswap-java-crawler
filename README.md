@@ -12,20 +12,13 @@ See [https://github.com/o-shabashov/wallswap-java](https://github.com/o-shabasho
 
 ## Installation
 1. Create MySQL database `wallswap` and import `wallswap.sql`
-2. Create [Dropbox App](https://www.dropbox.com/developers/apps/create)
-
-3. Redirect URL for Dropbox callback:
-```
-http://localhost:8080/oauth2callback
-```
-
-4. Install gradle dependencies:
+2. Install gradle dependencies:
 ```bash
 cd wallswap-java-crawler
 gradle build
 ```
 
-5. Run crawl once a week:
+3. Run crawl once a week:
 ```bash
 gradle build ; java -jar build/libs/wallswap-java-crawler-0.1.0.jar
 ```
