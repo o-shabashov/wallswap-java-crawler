@@ -17,7 +17,6 @@ See [https://github.com/o-shabashov/wallswap-java](https://github.com/o-shabasho
 cd wallswap-java-crawler
 gradle build
 ```
-
 3. Run crawl once a week:
 ```bash
 gradle build ; java -jar build/libs/wallswap-java-crawler-0.1.0.jar
