@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    baseName = 'wallswap-java-crawler'
+    version = '0.1.0'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    manifest {
+        attributes(
+                'Main-Class': 'com.oshabashov.wallswap.crawl.Crawl'
+        )
+    }
+}
+
+dependencies {
+    compile 'com.dropbox.core:dropbox-core-sdk:2.1.2'
+    compile 'org.jsoup:jsoup:1.10.1'
+    compile 'mysql:mysql-connector-java:5.1.+'
+
+    testCompile 'junit:junit4.11'
+}
